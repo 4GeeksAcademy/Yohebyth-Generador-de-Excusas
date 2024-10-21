@@ -18,7 +18,9 @@ const randVal = numWords => {
   return Math.floor(Math.random() * numWords);
 };
 
-let Imprimir = `${who[randVal(4)]} ${action[randVal(4)]} 
-  ${what[randVal(3)]} ${when[randVal(5)]}`;
+let Imprimir = `${who[randVal(who.length)]} 
+  ${action[randVal(action.length)]} 
+  ${what[randVal(what.length)]} 
+  ${when[randVal(when.length)]}`;
 
 document.querySelector("#excuse").innerHTML = Imprimir;
